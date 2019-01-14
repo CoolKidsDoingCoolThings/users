@@ -1,0 +1,26 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "ksmithut <ksmith.ut@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier-eslint '**/*.js' --write",
+    "lint": "standard && prettier-eslint '**/*.js' --list-different",
+    "start": "node .",
+    "start.dev": "nodemon --inspect=0.0.0.0:9229"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-nats-streaming": "^0.0.51",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "prettier-eslint-cli": "^4.7.1",
+    "standard": "^12.0.1"
+  }
+}
